@@ -1,4 +1,5 @@
 from contextlib import nullcontext
+import random
 
 print("======Begin=====")
 a = 3
@@ -98,3 +99,12 @@ x = list(("apple", "banana"))
 x = tuple(("apple", "banana"))
 x = range(8)
 x = dict(name="jo", age=14)
+
+x = 1.0
+y = 333.33333333333333333333333333333333333333
+z = -2.22222
+print("x type: ", type(x), "y type : ", type(y), "z type : ", type(z))
+
+print("x float: ", float(x), "y int : ", int(y), "z complex : ", complex(z))
+
+print(random.randrange(1, 3000))
