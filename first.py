@@ -108,3 +108,53 @@ print("x type: ", type(x), "y type : ", type(y), "z type : ", type(z))
 print("x float: ", float(x), "y int : ", int(y), "z complex : ", complex(z))
 
 print(random.randrange(1, 3000))
+
+a = "HellO world!   "
+print("a[1] is :=> ", a[1])
+
+for x in a:
+    print(x)
+
+print(" length of 'HELLO WORLD' IS ", len(a))
+
+print("hel" in a)
+print("Hel" in a)
+
+if "Hel" in a:
+    print("Yes Hel is present in ", a)
+if "HEL" not in a:
+    print("HEL is not present in ", a)
+
+## Slicing of Text
+print(a, "a[:2]", a[:2])
+print(a, "a[2:]", a[2:])
+print(a, "a[1:2]", a[1:2])
+print(a, "a[-5:-1]", a[-5:-1])
+print(a, "a[1:5:2]", a[1:5:2])
+
+## Modify Strings
+
+print(a.upper())
+print(a.lower())
+print(a.strip())
+print(a.replace("l", "U"))
+print(a.split(" "))
+## Format Strings
+age = 36
+#txt = "My name is John, I am " + age
+
+# print(txt)
+
+txt = "My name is John, I am {}"
+print(txt.format(age))
+
+quantity = 3
+itemno = 567
+price = 49.95
+myorder = "I want {} pieces of item {} for {} dollars."
+print(myorder.format(quantity, itemno, price))
+myorder = "I want to pay {2} dollars for {0} pieces of item {1}."
+print(myorder.format(quantity, itemno, price))
+
+# Escape Character
+txt = "We are the so-called \"Vikings\" from the north."
