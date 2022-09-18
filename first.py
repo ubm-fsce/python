@@ -143,8 +143,30 @@ print(a.split(" "))
 age = 36
 #txt = "My name is John, I am " + age
 
-# print(txt)
+# Escape Character
+txt = "We are the so-called \"Vikings\" from the north."
+# Strings
+name = "Sam"
+for x in name:
+    print(x)
+#SLICE
+last_letters = name[1:]
+name = "P" + last_letters
+print(name)
 
+name = name + " " + " " + name + " " + name + " " + " "
+print(name)
+
+print("Hello[1] : => ", "Hello"[1])
+
+print("SAMMY[2:]  :=>", "SAMMY"[2:])
+
+print('2' + '3')
+# SPLIT
+name = "Hi This is a String"
+print(name.split('i'))
+
+# Print FORMATTINg Sting
 txt = "My name is John, I am {}"
 print(txt.format(age))
 
@@ -156,5 +178,31 @@ print(myorder.format(quantity, itemno, price))
 myorder = "I want to pay {2} dollars for {0} pieces of item {1}."
 print(myorder.format(quantity, itemno, price))
 
-# Escape Character
-txt = "We are the so-called \"Vikings\" from the north."
+print("this is string {}".format('INSERTED'))
+
+print('the {} {} {}'.format('fox', 'brown', 'fox'))
+
+print('The {f} {b} {q}'.format(f='fox', b='box', q='quick'))
+
+# Floating point precision
+result = 100 / 7777
+print('100/7777 :=>', result)
+print('The result was {r:10.3f}'.format(r=result))
+print('The result was {r:0.3f}'.format(r=result))
+
+# f String format
+name = "jeoseph"
+print(f'hello,  his name is {name}')
+age = 3
+print(f'name : {name}, age : {age}')
+
+# LISTS IN PYTHON
+my_list = [1, 2, 3]
+my_list_2 = [1, "lk", 12.222, 123]
+print(len(my_list))
+print(len(my_list_2))
+print(my_list[1])
+print('my_list + my_list_2', my_list + my_list_2)
+new_list = my_list + my_list_2
+print('new_list', new_list)
+print(new_list[0] == "ALL_CAPS")
