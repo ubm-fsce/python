@@ -1,5 +1,5 @@
-from contextlib import nullcontext
 import random
+from contextlib import nullcontext
 
 print("======Begin=====")
 a = 3
@@ -206,3 +206,28 @@ print('my_list + my_list_2', my_list + my_list_2)
 new_list = my_list + my_list_2
 print('new_list', new_list)
 print(new_list[0] == "ALL_CAPS")
+
+txt = "Hello World"
+print("txt[2:4]", txt[2:5])
+thislist = ['apple', 'banana', 'cherry']
+print("Lenght of List ['apple', 'banana', 'cherry'] : ", len(thislist))
+# A list can contain different data types:
+list1 = ["abc", 34, True, 40, "male"]
+print("list1 Type : ", type(list1))
+# Access Elements in the list
+print("thislist[0] :", thislist[0])
+print("['apple', 'banana', 'cherry']  last Element : ", thislist[-1])
+
+print("['apple', 'banana', 'cherry'] 2-4 elements :  ", thislist[2:4])
+#Change list Items
+if 'apple' in thislist:
+    print("Apple is in the list")
+
+thislist[1:3] = ['item1', 'item2']
+print("This List after updated : ", thislist)
+
+thislist.insert(0, 'item0')
+print("This list after insert @ 0 : ", thislist)
+thislist.append('item3')
+
+print("This list after append : ", thislist)
