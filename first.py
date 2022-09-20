@@ -5,7 +5,7 @@ print("======Begin=====")
 a = 3
 b = "john"
 print(a + a)
-#  this is Comment
+#  this is Comment #=======================================================
 if 10 > 5:
     print("5 is big")
 """
@@ -230,4 +230,4 @@ thislist.insert(0, 'item0')
 print("This list after insert @ 0 : ", thislist)
 thislist.append('item3')
 
-print("This list after append : ", thislist)
+print("This list after append :=> ", thislist)
